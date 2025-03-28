@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #fff;
+}
+.box-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.divider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+}
+.text{
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff6680;
+    margin: 0 10px;
+}
+.line{
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+.container {
+    width: 400px;
+    margin: 20px auto;
+    border: 2px solid green;
+    padding: 10px;
+    border-radius: 10px;
+}
+.option {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    height: 50px;
+}
+/* on-clicking an input option */
+.option.expanded {
+    background: #ffe5ec;
+    padding: 20px;
+    height: 170px;
+}
+.units-and-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.units{
+    padding-top: 10px;
+    width: 180px;
+}
+.option label{
+    font-size: 20px;
+}
+.discount {
+    background: #ff4081;
+    color: white;
+    font-size: 14px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+.most-popular {
+    background: #ff4081;
+    color: white;
+    font-size: 10px;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 3px;
+    font-weight: bold;
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+.price {
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 13px;
+}
+.dropdown-container {
+    padding: 10px;
+    border-radius: 10px;
+    width: 220px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    padding: 0 30px;
+}
+
+.dropdown-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.dropdown-row label {
+    width: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+select {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+}
+.free-delivery {
+    color: green;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+    text-align: left;
+    margin-left: 10px;
+}
+.add-to-cart {
+    background: #ff4081;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.selection {
+    display: none;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.expanded .selection {
+    display: flex;
+}

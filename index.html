@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOGO Offer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box-container">
+        <div class="divider">
+            <hr class="line">
+                <span class="text">YAY! It's BOGO</span>
+            <hr class="line">
+        </div>
+        <div class="container">
+            <div class="option" onclick="expandOption(this, 10)">
+                <div class="units-and-price">
+                    <div class="units">
+                        <input type="radio" name="unit" checked>
+                        <label>1 Unit <span class="discount">10% Off</span></label>
+                    </div>
+                    <div class="price">$10.00 USD <span class="old-price">$24.00 USD</span></div>
+                </div>
+                <div class="dropdown-container">
+                    <div class="dropdown-header">
+                        <span>Size</span>
+                        <span>Colour</span>
+                    </div>                
+                    <div class="dropdown-row">
+                        <label>#1</label>
+                        <select>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                        <select>
+                            <option>Black</option>
+                            <option>White</option>
+                            <option>Colour</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="option" onclick="expandOption(this, 18)">
+                <span class="most-popular">MOST POPULAR</span>
+                <div class="units-and-price">
+                    <div class="units">
+                        <input type="radio" name="unit" checked>
+                        <label>2 Units <span class="discount">20% Off</span></label>
+                    </div>
+                    <div class="price">$18.00 USD <span class="old-price">$24.00 USD</span></div>
+                </div>
+                <div class="dropdown-container">
+                    <div class="dropdown-header">
+                        <span>Size</span>
+                        <span>Colour</span>
+                    </div>                
+                    <div class="dropdown-row">
+                        <label>#1</label>
+                        <select>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                        <select>
+                            <option>Black</option>
+                            <option>White</option>
+                            <option>Blue</option>
+                        </select>
+                    </div>
+                    <div class="dropdown-row">
+                        <label>#2</label>
+                        <select>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                        <select>
+                            <option>Blue</option>
+                            <option>Black</option>
+                            <option>White</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="option" onclick="expandOption(this, 24)">
+                <div class="units-and-price">
+                    <div class="units">
+                        <input type="radio" name="unit" checked>
+                        <label>3 Units <span class="discount">30% Off</span></label>
+                    </div>
+                    <div class="price">$24.00 USD <span class="old-price">$24.00 USD</span></div>
+                </div>
+                <div class="dropdown-container">
+                    <div class="dropdown-header">
+                        <span>Size</span>
+                        <span>Colour</span>
+                    </div>
+                    <div class="dropdown-row">
+                        <label>#1</label>
+                        <select>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                        <select>
+                            <option>Black</option>
+                            <option>White</option>
+                            <option>Blue</option>
+                        </select>
+                    </div>               
+                    <div class="dropdown-row">
+                        <label>#2</label>
+                        <select>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                        <select>
+                            <option>Blue</option>
+                            <option>Black</option>
+                            <option>White</option>
+                        </select>
+                    </div>
+                    <div class="dropdown-row">
+                        <label>#3</label>
+                        <select>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                        <select>
+                            <option>White</option>
+                            <option>Black</option>
+                            <option>Blue</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="free-delivery">Free Delivery</div>
+            <div>Total: <span id="total-price">$18.00 USD</span></div>
+            <button class="add-to-cart">+ Add to Cart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
